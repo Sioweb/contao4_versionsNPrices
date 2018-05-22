@@ -4,7 +4,7 @@
  * Contao Open Source CMS
  */
 
-namespace siSioweb;
+namespace Sioweb;
 use Contao;
 
 /**
