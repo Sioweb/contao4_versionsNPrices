@@ -118,18 +118,18 @@ $GLOBALS['TL_DCA']['tl_vnp_version_attributes'] = array
       'eval'                    => array('tl_class'=>'w50 clr'),
       'sql'                     => "blob NULL",
     ),
-    'disclaimer' => array(
-      'label'                   => &$GLOBALS['TL_LANG']['tl_vnp_version_attributes']['disclaimer'],
-      'inputType'               => 'listWizard',
-      'eval'                    => array('multiple'=>true,'tl_class'=>'long clr'),
-      'sql'                     => "blob NULL",
-    ),
     'value' => array(
       'label'                   => &$GLOBALS['TL_LANG']['tl_vnp_version_attributes']['value'],
       'exclude'                 => true,
       'inputType'               => 'text',
-      'eval'                    => array('maxlength'=>255),
+      'eval'                    => array('maxlength'=>255,'tl_class'=>'w50 clr'),
       'sql'                     => "varchar(255) NOT NULL default ''"
+    ),
+    'disclaimer' => array(
+      'label'                   => &$GLOBALS['TL_LANG']['tl_vnp_version_attributes']['disclaimer'],
+      'inputType'               => 'listWizard',
+      'eval'                    => array('multiple'=>true,'tl_class'=>'w50 clr'),
+      'sql'                     => "blob NULL",
     )
   )
 );
