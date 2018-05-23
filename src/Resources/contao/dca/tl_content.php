@@ -38,7 +38,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['vnp_versions'] = array
   'label'                   => &$GLOBALS['TL_LANG']['tl_content']['vnp_versions'],
   'inputType'               => 'checkboxWizard',
   'options_callback'        => array('tl_vnp_content', 'getVersions'),
-  'eval'                    => array('multiple'=>true,'tl_class'=>'w50 clr'),
+  'eval'                    => array('multiple'=>true,'tl_class'=>'long clr'),
   'sql'                     => "blob NULL",
 );
 $GLOBALS['TL_DCA']['tl_content']['fields']['vnp_attributes'] = array
@@ -46,7 +46,7 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['vnp_attributes'] = array
   'label'                   => &$GLOBALS['TL_LANG']['tl_content']['vnp_attributes'],
   'inputType'               => 'checkboxWizard',
   'options_callback'        => array('tl_vnp_content', 'getAttributes'),
-  'eval'                    => array('multiple'=>true,'tl_class'=>'w50 clr'),
+  'eval'                    => array('multiple'=>true,'tl_class'=>'long clr'),
   'sql'                     => "blob NULL",
 );
 $GLOBALS['TL_DCA']['tl_content']['fields']['vnp_disclaimer'] = array
