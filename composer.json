@@ -10,16 +10,11 @@
         }
     ],
     "require": {
-        "php": ">=5.5.0",
-        "symfony/framework-bundle": "^2.8|^3.0",
-        "contao/core-bundle": "^4.3.1"
+        "php": ">=7.0",
+        "contao/core-bundle": "^4.4"
     },
     "require-dev": {
-        "contao/manager-plugin": "^2.0"
-    },
-    "conflict": {
-        "contao/core": "*",
-        "contao/manager-plugin": "<2.0 || >=3.0"
+        "sioweb/apply_environment": "*"
     },
     "autoload": {
         "psr-4": {
@@ -35,13 +30,13 @@
             "src/Resources/contao/templates/"
         ]
     },
-    "config": {
-        "preferred-install": "dist"
-    },
     "extra": {
-        "branch-alias": {
-            "dev-develop": "4.4.x-dev"
-        },
         "contao-manager-plugin": "Sioweb\\VNPBundle\\ContaoManager\\Plugin"
+    },
+    "scripts": {
+        "package-scripts": [
+            "@config.localhost==1",
+            "Sioweb\\ApplyEnvironment\\Composer\\Git::init --repository=https://github.com/Sioweb/contao4_versionsNPrices.git"
+        ]
     }
 }
